@@ -1,0 +1,84 @@
+.App {
+  text-align: center;
+  background-color: #f7f7f7; /* Light gray background */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  animation: App-logo-bounce 2s infinite alternate;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-bounce 2s infinite alternate;
+  }
+}
+
+.App-header {
+  background-color: #3d5a80; /* Dark blue background */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #f4a261; /* Orange text */
+  font-size: 2rem; /* Larger font size */
+  padding: 2rem; /* Increased padding */
+}
+
+.App-link {
+  color: #ee6c4d; /* Reddish-orange link color */
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.text-rp-yellow {
+  animation: jump 1s ease infinite;
+  transition: all 1s ease;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* New styles for the buttons */
+.button {
+  background-color: #f4a261; /* Orange button */
+  color: #3d5a80; /* Dark blue text */
+  padding: 1rem 2rem; /* Increased padding */
+  font-size: 1.2rem; /* Larger font size */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #ee6c4d; /* Reddish-orange on hover */
+  transform: scale(1.05); /* Increase size on hover */
+}
+
+/* New styles for the image */
+.image {
+  width: 80%; /* Adjust image width */
+}
+
+/* New styles for the text */
+.text {
+  font-size: 1.5rem; /* Larger font size */
+  margin-bottom: 2rem; /* Increased margin */
+}
+
